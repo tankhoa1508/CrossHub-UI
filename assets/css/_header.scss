@@ -1,0 +1,52 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 1000;
+    border-bottom: 1px solid #444;
+
+    display: flex;
+    justify-content: center;    
+
+    .header-container {
+        width: calc($default-layout-width + 40px);
+        height: 53px;
+        padding: 10px 20px;
+        display: flex;
+
+        .logo {
+            display: inline-block;
+
+            img {
+                width: 101px;
+                height: 30px;
+
+            }
+        }
+
+        nav {
+            margin-left: auto;
+
+            ul {
+                display: flex;
+                line-height: 34px;
+
+                li {
+                    margin-left: 20px;
+
+                    a {
+                        color: #fff;
+                        font-size: 16px;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: $main-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

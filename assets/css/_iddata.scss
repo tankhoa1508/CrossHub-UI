@@ -1,0 +1,68 @@
+.iddata-section {
+    background: #D9C1AB;
+    color: #000;
+    padding: 70px 20px;
+
+    .iddata-header {
+        max-width: $default-layout-width;
+        margin: 0 auto;
+        text-align: left;
+
+        h3 {
+            @include h3Style();
+            color: #000;
+            margin: 0 0 20px;
+        }
+
+        h5 {
+            font-size: 14px;
+            font-weight: normal;
+            margin-bottom: 50px;
+            line-height: 1.5;
+            text-align: left;
+        }
+    }
+
+    .iddata-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: $default-layout-width;
+        margin: 0 auto;
+
+        .iddata-text {
+            flex: 1;
+            margin-right: 20px;
+
+            .iddata-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+
+                h4 {
+                    font-size: 30px;
+                    margin: 0;
+                    margin-right: 10px;
+                    font-weight: normal;
+                }
+
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .iddata-image {
+            flex: 1;
+            text-align: center;
+            margin-top: -50px;
+
+            img {
+                max-width: 80%;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+    }
+}

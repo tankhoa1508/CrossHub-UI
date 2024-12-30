@@ -1,0 +1,60 @@
+#service {
+    background: #000;
+    padding: 0 0 150px 0;
+
+    .service-content {
+        max-width: $default-layout-width;
+        width: 100%;
+
+        h2 {
+            font-size: 36px;
+            font-weight: bold;
+            color: $main-color;
+            margin-bottom: 30px;
+            vertical-align: inherit;
+        }
+
+        p {
+            font-size: 14px;
+            color: #fff;
+            margin-bottom: 40px;
+            line-height: 120%;
+        }
+
+        .service-images {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .service-item {
+                flex: 1;
+                max-width: 320px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .service-text {
+                    margin-top: 10px;
+
+                    h3 {
+                        background-color: $main-color;
+                        font-weight: bold;
+                        padding: 10px 40px;
+                        border-radius: 50px;
+                        font-size: 20px;
+                        color: #000000;
+                        margin: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

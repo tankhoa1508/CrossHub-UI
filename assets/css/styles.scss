@@ -1,0 +1,29 @@
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'home';
+@import 'company';
+@import 'service';
+@import 'technology';
+@import 'process';
+@import 'idpass';
+@import 'iddata';
+@import 'iddataProcess';
+@import 'footer';
+
+body {
+    background-color: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1;
+
+    .section {
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+}

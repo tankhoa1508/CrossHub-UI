@@ -1,0 +1,49 @@
+#company {
+    background: linear-gradient(to bottom, #0B1559 0%, #000 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 20px;
+    position: relative;
+
+    .company-content {
+        display: flex;
+        max-width: $default-layout-width;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+
+        .company-text {
+            flex: 1;
+            color: #fff;
+            text-align: left;
+            padding-right: 20px;
+
+            img {
+                width: 230px;
+                margin: 30px 0 50px;
+            }
+
+            p {
+                width: 100%;
+                max-width: 430px;
+                font-size: 14px;
+                line-height: 120%;
+            }
+        }
+
+        .company-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            width: 70%;
+
+            img {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+    }
+}
