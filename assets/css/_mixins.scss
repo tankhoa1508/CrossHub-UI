@@ -24,3 +24,16 @@
     color: $main-color;
     margin-bottom: 15px;
 }
+
+// responsive
+@mixin minWidth($value) {
+    @media screen and (min-width: $value) {
+        @content;
+    }
+}
+
+@mixin maxWidth($value) {
+    @media screen and (max-width: $value) {
+        @content;
+    }
+}

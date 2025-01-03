@@ -6,6 +6,10 @@
     padding: 150px 20px;
     position: relative;
 
+    @include maxWidth(768px) {
+        padding: 45px 16px 56px;
+    }
+
     .company-content {
         display: flex;
         max-width: $default-layout-width;
@@ -13,6 +17,10 @@
         align-items: flex-start;
         justify-content: space-between;
         position: relative;
+
+        @include maxWidth(768px) {
+            display: block;
+        }
 
         .company-text {
             flex: 1;
@@ -23,6 +31,11 @@
             img {
                 width: 230px;
                 margin: 30px 0 50px;
+
+                @include maxWidth(768px) {
+                    width: 174px;
+                    margin: 0 auto 25px; 
+                }
             }
 
             p {
@@ -30,6 +43,13 @@
                 max-width: 430px;
                 font-size: 14px;
                 line-height: 120%;
+
+                @include maxWidth(768px) {
+                    text-align: center;
+                    font-size: 16px;
+                    line-height : 19.54px;
+                    margin-bottom: 48px;
+                }
             }
         }
 
@@ -43,6 +63,10 @@
                 max-width: 100%;
                 height: auto;
                 object-fit: cover;
+            }
+
+            @include maxWidth(768px) {
+                margin: 0 auto;
             }
         }
     }

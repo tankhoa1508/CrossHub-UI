@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CrossHub</title>
 
+    <!-- cross-hub-ui.vercel.app -->
+
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
@@ -13,22 +15,35 @@
         <div class="header-container">
           <div class="logo">
             <img src="./assets/images/main_logo.png" alt="logo">
+            <div onclick="openNav()" class="nav-toggle">
+                ☰
+            </div>
           </div>
-          <nav>
+          <nav id="nav" class="">
+
             <ul>
-              <li><a href="#home">Trang chủ</a></li>
-              <li><a href="#company">Công ty</a></li>
-              <li><a href="#service">Dịch vụ</a></li>
-              <li><a href="#technology">Công nghệ</a></li>
+              <li><a class="nav__link active" onclick="closeNav()" href="#home">Home</a></li>
+              <li><a class="nav__link" onclick="closeNav()" href="#company">Company</a></li>
+              <li><a class="nav__link" onclick="closeNav()" href="#service">Service</a></li>
+              <li><a class="nav__link" onclick="closeNav()" href="#technology">Technology</a></li>
             </ul>
           </nav>
+
+          <div class="language">
+            <img src="./assets/images/global.svg" id="language-icon" alt="">
+            <select name="language-select" id="language-select">
+                <option id="english" value="english">English</option>
+                <option id="korean" value="korean">Korean</option>
+                <option id="vietnamese" value="vietnamese">Vietnamese</option>
+              </select>
+          </div>
         </div>
     </header>
 
     <section id="home" class="section">
         <div class="intro-text">
           <img src="./assets/images/word.png" alt="#">
-          <p>Nhận ra giá trị <br>của cuộc sống hàng ngày và công nghệ</p>
+          <p>Realizing the value <br>of everyday life and technology</p>
         </div>
     </section>
 
@@ -36,8 +51,8 @@
         <div class="company-content">
           <div class="company-text">
             <img src="./assets/images/word.png" alt="#">
-            <p>Là một trung tâm kết nối giao điểm của truyền thống và tương lai, con người và đồ vật, trải nghiệm trong quá khứ và khả năng trong tương lai với công nghệ đổi mới, chúng tôi cung cấp cho khách hàng những trải nghiệm và dịch vụ mới. <br><br>
-              Dựa trên công nghệ blockchain và AI, CrossHub dẫn đầu quá trình chuyển đổi kỹ thuật số (DX) trong lĩnh vực fintech, kết nối tất cả các khía cạnh trong cuộc sống hàng ngày của chúng ta để hiện thực hóa những trải nghiệm mới và giá trị của công nghệ.</p>
+            <p>As a hub that connects the crossroads of tradition and the future, people and objects, and past experiences and future possibilities with innovative technology, we provide customers with new experiences and services. <br><br>
+                Based on blockchain and AI technologies, CrossHub leads the digital transformation (DX) in fintech, connecting all aspects of our daily lives to realize new experiences and the value of technology.</p>
           </div>
           <div class="company-image">
             <img src="./assets/images/company_cube.png" alt="hình ảnh" class="animated-image">
@@ -229,6 +244,9 @@
             </div>
           </div>
         </div>
-      </footer>
+    </footer>
+
+
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
