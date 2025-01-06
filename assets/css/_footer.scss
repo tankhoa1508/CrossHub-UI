@@ -1,21 +1,23 @@
 footer {
     background: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 32px 0;
+    padding-left: 80px;
+    padding-right: 213px;
 
     .footer-container {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        max-width: $default-layout-width;
+        // max-width: $default-layout-width;
         margin: 0 auto;
-        font-size: 12px;
+        font-size: 18px;
 
         .footer-left {
             flex: 0 0 auto;
 
             img {
-                max-width: 100px;
+                width: 108px;
             }
         }
 
@@ -43,6 +45,10 @@ footer {
                             margin: 5px 0;
                             text-align: left;
                         }
+                    }
+
+                    img {
+                        width: 116px;
                     }
                 }
 

@@ -1,9 +1,11 @@
 #company {
-    background: linear-gradient(to bottom, #0B1559 0%, #000 100%);
+    // background: linear-gradient(to bottom, #0B1559 0%, #000 100%);
+    background: linear-gradient(180deg, #0B1457 0%, #000000 61%);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 150px 20px;
+    padding-bottom: 75px;
     position: relative;
 
     @include maxWidth(768px) {
@@ -40,15 +42,19 @@
 
             p {
                 width: 100%;
-                max-width: 430px;
-                font-size: 14px;
-                line-height: 120%;
+                max-width: 506px;
+                font-size: 18px;
+                font-weight: 600;
+                opacity: 0.8;
+                line-height: 22px;
 
                 @include maxWidth(768px) {
                     text-align: center;
                     font-size: 16px;
                     line-height : 19.54px;
+                    margin: 0 auto;
                     margin-bottom: 48px;
+
                 }
             }
         }
@@ -58,6 +64,12 @@
             display: flex;
             justify-content: center;
             width: 70%;
+            max-width: 472px;
+
+            @include maxWidth(768px) {
+                margin: 0 auto;
+                width: 350px;
+            }
 
             img {
                 max-width: 100%;
@@ -65,9 +77,6 @@
                 object-fit: cover;
             }
 
-            @include maxWidth(768px) {
-                margin: 0 auto;
-            }
         }
     }
 }

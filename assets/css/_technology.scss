@@ -1,118 +1,295 @@
 #technology {
-    background: linear-gradient(to bottom, #123748, #000);
+    background: linear-gradient(180deg, #123647 0%, #000000 61%);
     color: #fff;
     box-sizing: border-box;
-    padding: 70px 0;
+    padding: 156px 0;
+    padding-bottom: 0;
 
-    .technology-content {
-        max-width: $default-layout-width;
-        margin: 0 auto;
+    @include maxWidth(768px) {
+        padding-top: 42px;
+    }
+    .bg-bottom {
+        width: 100%;
+        background: url(../images/bg_process.png) no-repeat center bottom;
+        background-position: center bottom;
+        transform: translateZ(0);
+        background-size: contain;
+        padding-bottom: 156px;
 
-        .tech-header {
-            margin-bottom: 40px;
-            text-align: left;
-
-            h3 {
-                @include h3Style();
-            }
-
-            p {
-                font-size: 14px;
-                color: #fff;
-                margin: 0;
-                text-align: left;
-                line-height: 120%;
-            }
+        @include maxWidth(768px) {
+            padding-bottom: 89px;
         }
 
-        .tech-item {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 40px;
-            flex-wrap: wrap;
+        .technology-content {
+            max-width: $default-layout-width;
+            // max-width: $default-layout-width;
+            margin: 0 auto;
 
-            .tech-image {
-                flex: 1;
-                display: flex;
-                justify-content: center;
-
-                img {
-                    max-width: 100%;
-                    height: auto;
-                    object-fit: cover;
-                }
-            }
-
-            .tech-details {
-                flex: 1;
+            .tech-header {
+                margin-bottom: 96px;
                 text-align: left;
 
-                .tech-text {
-                    margin-bottom: 24px;
-                    display: flex;
-                    align-items: center;
-
-                    h4 {
-                        font-size: 30px;
-                        color: $main-color;
-                        margin: 0;
-                        display: inline-block;
-                    }
-
-                    span {
-                        font-size: 14px;
-                        color: $main-color;
-                        display: inline;
-                        margin-left: 10px;
-                    }
+                @include maxWidth(768px) {
+                    margin-bottom: 30px
                 }
-            }
-        }
 
-        .tech-item2 {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 40px;
-            flex-wrap: wrap;
+                h3 {
+                    @include h3Style();
+                    font-size: 32px;
 
-            .tech-details {
-                flex: 1;
-                text-align: left;
-
-                .tech-text {
-
-                    h5 {
-                        display: inline-block;
-                        font-size: 18px;
-                        color: $main-color;
-                        border: 2px solid $main-color;
-                        border-radius: 20px;
-                        padding: 35px 60px;
-                        margin-bottom: 50px;
-                        text-align: left;
-                        line-height: 120%;
-                    }
-
-                    p {
-                        font-size: 14px;
+                    @include maxWidth(768px) {
+                        font-size: 40px;
                         color: #fff;
-                        margin: 0;
-                        line-height: 120%;
+                        text-align: center;
+                        margin-bottom: 24px;
+                    }
+                }
+
+                p {
+                    font-size: 18px;
+                    font-weight: bold;
+                    opacity: 0.8;
+                    color: #fff;
+                    margin: 0;
+                    text-align: left;
+                    line-height: 120%;
+
+                    @include maxWidth(768px) {
+                        margin: 0 auto;
+                        text-align: center;
+                        font-size: 16px;
+                        max-width: 398px;
                     }
                 }
             }
 
-            .tech-image {
-                flex: 1;
+            .tech-item {
                 display: flex;
-                justify-content: center;
+                align-items: center;
+                margin-bottom: 40px;
+                flex-wrap: wrap;
+                width: 100%;
 
-                img {
-                    max-width: 90%;
-                    height: auto ;
-                    object-fit: cover;
+                .tech-image {
+                    display: flex;
+                    justify-content: center;
+                    width: 600px;
+                    margin-right: 63px;
+
+                    @include maxWidth(768px) {
+                        order: 1;
+                        width: 350px;
+                        margin: 0 auto;
+                    }
+
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                    }
+                }
+
+                .tech-details {
+                    flex: 1;
+                    text-align: left;
+
+                    @include maxWidth(768px) {
+                        flex: none;
+                        margin-bottom: 32px;
+                    }
+
+                    .tech-text {
+                        margin-bottom: 30px;
+                        display: flex;
+                        align-items: center;
+
+                        @include maxWidth(768px) {
+                            margin-bottom: 16px;
+                            padding-left: 20px;
+                            padding-right: 10px;
+                        }
+
+                        h4 {
+                            font-size: 48px;
+                            color: $main-color;
+                            margin: 0;
+                            display: inline-block;
+
+                            @include maxWidth(768px) {
+                                font-size: 32px;
+                            }
+                        }
+
+                        span {
+                            font-size: 18px;
+                            font-weight: bold;
+                            opacity: 0.8;
+                            color: $main-color;
+                            display: inline;
+                            margin-left: 10px;
+
+                            @include maxWidth(768px) {
+                                max-width: 346px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .tech-item2 {
+                display: flex;
+                align-items: center;
+                margin-bottom: 105px;
+                flex-wrap: wrap;
+
+                @include maxWidth(768px) {
+                    margin-bottom: 48px;
+                }
+
+                .tech-details {
+                    flex: 1;
+                    text-align: left;
+                    margin-right: 71px;
+
+                    @include maxWidth(768px) {
+                        margin-right: 0;
+                        margin-bottom: 48px;
+                    }
+
+                    .tech-text {
+
+                        @include maxWidth(768px) {
+                            text-align: center;
+                        }
+
+
+                        h5 {
+                            display: inline-block;
+                            font-size: 24px;
+                            color: $main-color;
+                            border: 3px solid $main-color;
+                            border-radius: 20px;
+                            padding: 64px 96px;
+                            margin-bottom: 50px;
+                            text-align: left;
+                            line-height: 29.3px;
+
+                            @include maxWidth(768px) {
+                                // margin-left: 26px;
+                                text-align: center;
+                                padding: 24px 48px;
+                                font-size: 18px;
+                                border-radius: 16px;
+                            }
+                        }
+
+                        p {
+                            font-size: 18px;
+                            font-weight: bold;
+                            opacity: 0.8;
+                            color: #fff;
+                            margin: 0;
+                            line-height: 22px;
+
+                            @include maxWidth(768px) {
+                                text-align: center;
+                                font-size: 14px;
+                                max-width: 323px;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+
+                .tech-image {
+                    display: flex;
+                    justify-content: center;
+                    width: 568px;
+
+                    @include maxWidth(768px) {
+                        margin: 0 auto;
+                        width: 350px;
+                    }
+
+                    img {
+                        // max-width: 90%;
+                        height: auto ;
+                        // object-fit: cover;
+                    }
+                }
+            }
+
+            //process
+            .process-container {
+                width: 100%;
+                height: 100%;
+                background-color: #000 50%;
+        
+                .process-content {
+                    max-width: $default-layout-width;
+                    margin: 0 auto;
+                    box-sizing: border-box;
+            
+            
+                    .process-header {
+                        margin-bottom: 40px;
+                        text-align: left;
+
+                        @include maxWidth(768px) {
+                            margin-bottom: 32px
+                        }
+            
+                        h3 {
+                            @include h3Style();
+                            font-size: 24px;
+                            text-align: center;
+                        }
+                    }
+            
+                    .process-image {
+            
+                        img {
+                            width: 100%;
+                            margin: 0 auto;
+
+                            @include maxWidth(768px) {
+                                width: 307px;
+                            }
+                        }
+                    }
+            
+                    .process-item {
+                        text-align: center;
+                        // align-items: center;
+                        // gap: 20px;
+                        margin: 0 auto;
+            
+                        .process-text {
+            
+                            h5 {
+                                border: 3px solid $main-color;
+                                font-size: 18px;
+                                color: $main-color;
+                                font-weight: bold;
+                                opacity: 0.8;
+                                display: inline-block;
+                                padding: 16px 72px;
+                                border-radius: 50px;
+                                margin-top: 70px;
+                                line-height: 22px;
+                                
+                                @include maxWidth(768px) {
+                                    margin-top: 40px;
+                                    padding: 24px 15px;
+                                    font-size: 14px;
+                                    max-width: 365px;
+                                    border-radius: 32px;
+                                    line-height: 17.09px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

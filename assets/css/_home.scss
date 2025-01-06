@@ -1,29 +1,23 @@
 #home {
     background: url(/assets/images/bg_home.png) no-repeat center center;
     background-size: cover;
-    height: 100vh;
+    height: 892px;
 
     .intro-text {
-        // margin: 0 auto;
         display: flex;
         text-align: left;
-        // position: relative;
+        position: absolute;
+        top: 328px;
         z-index: 1;
-        // bottom: 50px;
-        // right: 210px;
-        width: 65%;
+        width: $default-layout-width;
 
         @include maxWidth(768px) {
             display: block;
-            text-align: center;
-            bottom: -23px;
-            right: 0;
         }
 
         img {
-            width: 380px;
-            height: 97.141px;
-            margin-right: 20px;
+            width: 417px;
+            margin-right: 24px;
 
             @include maxWidth(768px) {
                 width: 243px;
@@ -34,13 +28,14 @@
         }
 
         p {
-            font-size: 20px;
+            font-size: 22px;
+            line-height: 26.86px;
             color: #fff;
             vertical-align: inherit;
             white-space: nowrap;
             margin-top: 5px;
             @include maxWidth(768px) {
-                margin-top: 126px;
+                margin-top: 116px;
                 font-size: 18px;
                 font-weight: 500;
                 line-height: 21.98px;

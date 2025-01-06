@@ -32,6 +32,12 @@ if (x < 769) {
     document.getElementById("vietnamese").innerHTML = "Vietnamese";
 }
 
+if (x < 769) {
+    document.getElementById("process-img").src="./assets/images/process_mo.png";
+
+    document.getElementById("tech-item").style.display = "none";
+}
+
 // active navbar
 const navLinkEls = document.querySelectorAll('.nav__link');
     navLinkEls.forEach(navLinkEl => {
