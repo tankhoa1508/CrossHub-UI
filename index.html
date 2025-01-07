@@ -6,7 +6,7 @@
     <title>CrossHub</title>
 
     <!-- cross-hub-ui.vercel.app -->
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
@@ -14,7 +14,9 @@
     <header>
         <div class="header-container">
           <div class="logo">
-            <img src="./assets/images/main_logo.png" alt="logo">
+            <a href="#">
+                <img src="./assets/images/main_logo.png" alt="logo">
+            </a>
             <div onclick="openNav()" class="nav-toggle">
                 ☰
             </div>
@@ -49,12 +51,12 @@
 
     <section id="company" class="section">
         <div class="company-content">
-          <div class="company-text">
+          <div class="company-text" data-aos="fade-right">
             <img src="./assets/images/word.png" alt="#">
             <p>As a hub that connects the crossroads of tradition and the future, people and objects, and past experiences and future possibilities with innovative technology, we provide customers with new experiences and services. <br><br>
                 Based on blockchain and AI technologies, CrossHub leads the digital transformation (DX) in fintech, connecting all aspects of our daily lives to realize new experiences and the value of technology.</p>
           </div>
-          <div class="company-image">
+          <div class="company-image" data-aos="fade-left">
             <img src="./assets/images/company_cube.png" alt="hình ảnh" class="animated-image">
           </div>
         </div>
@@ -65,21 +67,21 @@
           <h2>SERVICE</h2>
           <p>CROSSHUB provides a variety of differentiated <br>services based on blockchain and AI technologies.</p>
           <div class="service-images">
-            <div class="service-item">
+            <div class="service-item" data-aos="flip-up">
               <img src="./assets/images/service1.jpg" alt="service 1" class="animated-image">
               <div class="service-text">
                 <h3>IDBlock</h3>
                 <p>Blockchain-based DID <br> identity verification service</p>
               </div>
             </div>
-            <div class="service-item">
+            <div class="service-item" data-aos="flip-up">
               <img src="./assets/images/service2.jpg" alt="service 2" class="animated-image">
               <div class="service-text">
                 <h3>IDPass</h3>
                 <p>Global easy payment and international <br>currency notation service</p>
               </div>
             </div>
-            <div class="service-item">
+            <div class="service-item" data-aos="flip-up">
               <img src="./assets/images/service3.jpg" alt="service 3" class="animated-image">
               <div class="service-text">
                 <h3>IDData</h3>
@@ -99,10 +101,10 @@
               </div>
         
               <div class="tech-item">
-                <div class="tech-image">
+                <div class="tech-image" data-aos="zoom-in-up">
                   <img src="./assets/images/tech1.png" alt="Hình ảnh công nghệ 1">
                 </div>
-                <div class="tech-details">
+                <div class="tech-details" data-aos="zoom-in-up">
                   <div class="tech-text">
                     <h4>01</h4>
                     <span>Provides simple and secure identity verification services using passports, driver's licenses, etc.</span>
@@ -127,13 +129,13 @@
               </div>
         
               <div class="tech-item2">
-                <div class="tech-details">
+                <div class="tech-details" data-aos="zoom-in-right">
                   <div class="tech-text">
                     <h5>Establishes a higher level <br>of security with <br>Zero-Knowledge Proof</h5>
                     <p>A technology that verifies the validity of blockchain data and protects privacy by proving to the verifier that the verifier knows the secret information without directly exposing the confidential information to the verifier.</p>
                   </div>
                 </div>
-                <div class="tech-image">
+                <div class="tech-image" data-aos="zoom-in-right">
                   <img src="./assets/images/tech2-removebg-preview.png" alt="Hình ảnh công nghệ 2">
                 </div>
               </div>
@@ -143,7 +145,7 @@
                   <div class="process-header">
                     <h3>Process</h3>
                   </div>
-                  <div class="process-image mo-process-image">
+                  <div class="process-image mo-process-image" data-aos="zoom-out-right" data-aos-duration="2000">
                     <img src="./assets/images/process.png" id="process-img" alt="hình ảnh">
                   </div>
                   <div class="process-item">
@@ -165,7 +167,7 @@
           </div>
           <h5>All currencies around the world are applied with a simple <br>
             won charging service and QR code payment system</h5>
-          <div class="tech-item2">
+          <div class="tech-item2" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <div class="image-section">
               <img src="./assets/images/IDPASS.png" class="tech-image__idpass" alt="Hình ảnh thẻ ID">
             </div>
@@ -210,19 +212,23 @@
             </div>
           </div>
           <div class="iddata-image">
-            <img src="./assets/images/IDData.jpeg" alt="Nền dữ liệu ID">
+            <img src="./assets/images/IDData.jpeg" alt="IDData">
           </div>
         </div>
     </section>
 
     <section class="iddata-process">
-        <div class="iddata-process-container"></div>
+        <!-- <div class="iddata-process-container"> -->
+            <div class="iddata-process-image">
+                <img src="./assets/images/iddata_process.png" id="iddata-process-img" alt="">
+            </div>
+        <!-- </div> -->
     </section>
 
     <footer>
         <div class="footer-container">
           <div class="footer-left">
-            <img src="./assets/images/main_logo.png" alt="biểu tượng">
+            <img src="./assets/images/main_logo.png" alt="logo">
           </div>
           <div class="footer-right">
             <div class="footer-content">
@@ -232,21 +238,24 @@
                   <p>FAX +82 2-6008-5040</p>
                   <p>Contact info@crosshub.kr</p>
                 </div>
-                <img src="./assets/images/mark.png" alt="đánh dấu">
+                <img src="./assets/images/mark.png" alt="mark">
               </div>
               <div class="footer-address">
                 <p>Headquarters 404-D38Ho, 1161, Gyebaek-ro, Seo-gu, Daejeon</p>
                 <p>Fintech R&D Center 17F, 83, Uisadang-daero, Yeongdeungpo-gu, Seoul</p>
                 <p>Global Research Center 3F, 31 Magokjungang 8-ro 3-gil, Gangseo-gu, Seoul.</p>
                 <p style="color: #333 ;">.</p>
-                <p>© 2024 CrossHub. Mọi quyền được bảo lưu.</p>
+                <p>© 2024 CrossHub. All rights reserved.</p>
               </div>
             </div>
           </div>
         </div>
     </footer>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>

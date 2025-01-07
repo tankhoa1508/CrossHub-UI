@@ -34,6 +34,7 @@ if (x < 769) {
 
 if (x < 769) {
     document.getElementById("process-img").src="./assets/images/process_mo.png";
+    document.getElementById("iddata-process-img").src="./assets/images/iddata_process_mo.png";
 
     document.getElementById("tech-item").style.display = "none";
 }

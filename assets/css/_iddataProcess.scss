@@ -4,12 +4,19 @@
     background-color: #000;
     padding: 156px 0;
 
-    .iddata-process-container {
-        text-align: center;
-        margin: 0 auto;
-        max-width: calc($default-layout-width - 100px);
-        background: url(../images/iddata_process.png) no-repeat center center;
-        background-size: contain;
-        height: 400px;
+    @include maxWidth(768px) {
+        padding-top: 64px;
+        padding-bottom: 72px;
     }
+
+    .iddata-process-image {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        @include maxWidth(768px) {
+            width: 264px;
+        }
+    }
+
+    
 }
