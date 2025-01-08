@@ -61,10 +61,9 @@ header .header-container nav {
 @media screen and (max-width: 768px) {
   header .header-container nav {
     display: none;
-    width: 40%;
+    width: 35%;
     height: 100vh;
     flex-direction: column;
-    align-items: center;
     position: absolute;
     top: 60px;
     left: 0;
@@ -78,6 +77,16 @@ header .header-container nav {
     100% {
       opacity: 1;
     }
+  }
+}
+@media screen and (max-width: 568px) {
+  header .header-container nav {
+    width: 42%;
+  }
+}
+@media screen and (max-width: 429px) {
+  header .header-container nav {
+    width: 50%;
   }
 }
 header .header-container nav ul {
@@ -176,7 +185,7 @@ header .header-container .language select {
   line-height: 26.86px;
   color: #fff;
   vertical-align: inherit;
-  white-space: nowrap;
+  white-space: wrap;
   margin-top: 5px;
 }
 @media screen and (max-width: 768px) {
@@ -188,6 +197,11 @@ header .header-container .language select {
     text-align: center;
   }
 }
+@media screen and (max-width: 429px) {
+  #home .intro-text p {
+    margin: 116px 527px 0;
+  }
+}
 
 #company {
   background: linear-gradient(180deg, #0B1457 0%, #000000 61%);
@@ -197,6 +211,7 @@ header .header-container .language select {
   padding: 150px 20px;
   padding-bottom: 75px;
   position: relative;
+  margin-top: 1px;
 }
 @media screen and (max-width: 768px) {
   #company {
@@ -427,6 +442,11 @@ header .header-container .language select {
     max-width: 398px;
   }
 }
+@media screen and (max-width: 360px) {
+  #technology .bg-bottom .technology-content .tech-header p {
+    margin: 0 18px;
+  }
+}
 #technology .bg-bottom .technology-content .tech-item {
   display: flex;
   align-items: center;
@@ -460,6 +480,7 @@ header .header-container .language select {
 @media screen and (max-width: 768px) {
   #technology .bg-bottom .technology-content .tech-item .tech-details {
     flex: none;
+    margin: 0 auto;
     margin-bottom: 32px;
   }
 }
@@ -492,12 +513,22 @@ header .header-container .language select {
   opacity: 0.8;
   color: #02F0F5;
   display: inline;
-  margin-left: 10px;
+  margin-left: 16px;
 }
 @media screen and (max-width: 768px) {
   #technology .bg-bottom .technology-content .tech-item .tech-details .tech-text span {
     max-width: 346px;
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #technology .bg-bottom .technology-content .tech-item .tech-details .tech-text span {
+    max-width: 270px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #technology .bg-bottom .technology-content .tech-item .tech-details .tech-text span {
+    max-width: 265px;
   }
 }
 #technology .bg-bottom .technology-content .tech-item2 {
@@ -636,6 +667,13 @@ header .header-container .language select {
     max-width: 365px;
     border-radius: 32px;
     line-height: 17.09px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #technology .bg-bottom .technology-content .process-container .process-content .process-item .process-text h5 {
+    padding: 20px 10px;
   }
 }
 
@@ -689,6 +727,13 @@ header .header-container .language select {
     font-size: 16px;
     line-height: 19.54px;
     text-align: center;
+    margin: 0 16px;
+    margin-bottom: 8px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #idpass .process-content h5 {
+    margin: 0 30px;
     margin-bottom: 8px;
   }
 }
@@ -885,6 +930,7 @@ footer {
   padding: 32px 0;
   padding-left: 80px;
   padding-right: 213px;
+  margin-top: 1px;
 }
 @media screen and (max-width: 768px) {
   footer {

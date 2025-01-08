@@ -60,6 +60,10 @@
                         font-size: 16px;
                         max-width: 398px;
                     }
+
+                    @include maxWidth(360px) {
+                        margin: 0 18px;
+                    }
                 }
             }
 
@@ -95,8 +99,10 @@
 
                     @include maxWidth(768px) {
                         flex: none;
+                        margin: 0 auto;
                         margin-bottom: 32px;
                     }
+
 
                     .tech-text {
                         margin-bottom: 30px;
@@ -126,11 +132,19 @@
                             opacity: 0.8;
                             color: $main-color;
                             display: inline;
-                            margin-left: 10px;
+                            margin-left: 16px;
 
                             @include maxWidth(768px) {
                                 max-width: 346px;
                                 font-size: 14px;
+                            }
+
+                            @include maxWidth(450px) {
+                                max-width: 270px;
+                            }
+
+                            @include maxWidth(360px) {
+                                max-width: 265px;
                             }
                         }
                     }
@@ -286,6 +300,13 @@
                                     max-width: 365px;
                                     border-radius: 32px;
                                     line-height: 17.09px;
+
+                                    margin-left: 20px;
+                                    margin-right: 20px;
+                                }
+
+                                @include maxWidth(360px) {
+                                    padding: 20px 10px;
                                 }
                             }
                         }

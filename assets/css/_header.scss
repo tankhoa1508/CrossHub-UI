@@ -63,10 +63,11 @@ header {
 
             @include maxWidth(768px) {
                 display: none;
-                width: 40%;
+                width: 35%;
+                // width: auto;
                 height: 100vh;
                 flex-direction: column;
-                align-items: center;
+                // align-items: center;
                 position: absolute;
                 top: 60px;
                 left: 0;
@@ -78,6 +79,14 @@ header {
                     0% {opacity: 0;}
                     100% {opacity: 1;}
                 }
+            }
+
+            @include maxWidth(568px) {
+                width: 42%;
+            }
+
+            @include maxWidth(429px) {
+                width: 50%;
             }
             ul {
                 display: flex;

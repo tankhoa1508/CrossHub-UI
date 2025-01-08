@@ -44,6 +44,12 @@
                 font-size: 16px;
                 line-height: 19.54px;
                 text-align: center;
+                margin: 0 16px;
+                margin-bottom: 8px;
+            }
+
+            @include maxWidth(360px) {
+                margin: 0 30px;
                 margin-bottom: 8px;
             }
         }

@@ -32,7 +32,7 @@
             line-height: 26.86px;
             color: #fff;
             vertical-align: inherit;
-            white-space: nowrap;
+            white-space: wrap;
             margin-top: 5px;
             @include maxWidth(768px) {
                 margin-top: 116px;
@@ -40,6 +40,10 @@
                 font-weight: 500;
                 line-height: 21.98px;
                 text-align: center;
+            }
+
+            @include maxWidth(429px) {
+                margin: 116px 527px 0;
             }
         }
     }
