@@ -4,6 +4,7 @@ footer {
     padding: 32px 0;
     padding-left: 80px;
     padding-right: 213px;
+    margin-top: 1px;
 
     @include maxWidth(768px) {
         padding: 32px 16px 56px;
