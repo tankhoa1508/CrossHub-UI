@@ -197,9 +197,9 @@ header .header-container .language select {
     text-align: center;
   }
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 380px) {
   #home .intro-text p {
-    margin: 116px 527px 0;
+    margin: 116px 497px 0;
   }
 }
 
