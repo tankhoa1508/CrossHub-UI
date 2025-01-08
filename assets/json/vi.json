@@ -1,0 +1,60 @@
+{
+    "header": {
+        "home": "Trang chủ",
+        "company": "Công ty",
+        "service": "Dịch vụ",
+        "technology": "Công nghệ"
+    },
+    "home": {
+        "slogan": "Kiến tạo tương lai <br>từ giá trị cuộc sống và sức mạnh công nghệ"
+    },
+    "company": {
+        "description": "Là trung tâm kết nối giữa truyền thống và tương lai, con người và vật chất, trải nghiệm quá khứ và khả năng tương lai thông qua công nghệ đổi mới, chúng tôi mang đến cho khách hàng những trải nghiệm và dịch vụ hoàn toàn mới. <br><br>Dựa trên công nghệ blockchain và AI, CrossHub tiên phong trong chuyển đổi số (DX) lĩnh vực fintech, kết nối mọi khía cạnh của cuộc sống hàng ngày để tạo ra những trải nghiệm mới và giá trị vượt trội từ công nghệ."
+    },
+    "service": {
+        "title": "DỊCH VỤ",
+        "subTitle": "CROSSHUB mang đến nhiều dịch vụ khác biệt <br>dựa trên công nghệ blockchain và AI.",
+        "IDBlockTitle": "IDBlock",
+        "IDBlockContent": "Dịch vụ xác minh danh tính DID <br>dựa trên blockchain",
+        "IDPassTitle": "IDPass",
+        "IDPassContent": "Dịch vụ thanh toán toàn cầu dễ dàng <br>và ký hiệu tiền tệ quốc tế",
+        "IDDataTitle": "IDData",
+        "IDDataContent": "Dịch vụ phân tích tổng hợp và phân tích AI <br>dựa trên dữ liệu lớn"
+    },
+    "technology": {
+        "IDBlockTitle": "IDBlock",
+        "IDBlockContent": "IDBlock được tối ưu hóa cho các dịch vụ xác minh danh tính dựa trên blockchain, <br>cho phép mọi người trên toàn thế giới xác thực danh tính của họ một cách an toàn và dễ dàng, ngay cả ở Hàn Quốc.",
+        "IDBlockItemContent1": "Cung cấp dịch vụ xác minh danh tính đơn giản và an toàn bằng hộ chiếu, bằng lái xe, v.v.",
+        "IDBlockItemContent2": "Hệ thống phi tập trung nơi các cá nhân quản lý dữ liệu xác minh danh tính của riêng họ.",
+        "IDBlockItemContent3": "Áp dụng trong nhiều tình huống khác nhau khi cần xác minh danh tính.",
+        "IDBlockItemContent4": "Cho phép tích hợp và sử dụng với các dịch vụ ứng dụng trong nước thông qua việc xác minh danh tính đơn giản.",
+        "IDBlockItemContent5": "Đảm bảo quyền riêng tư và khả năng mở rộng của blockchain bằng công nghệ Zero-Knowledge Proof (ZKP).",
+        "subIDBlockTitle": "Thiết lập mức độ bảo mật <br>cao hơn với <br>Zero-Knowledge Proof",
+        "subIDBlockContent": "Một công nghệ xác minh tính hợp lệ của dữ liệu blockchain và bảo vệ quyền riêng tư bằng cách chứng minh cho người xác minh rằng người xác minh biết thông tin bí mật mà không trực tiếp tiết lộ thông tin bí mật cho người xác minh.",
+        "processTitle": "Quy trình",
+        "processContent": "Áp dụng công nghệ blockchain (ZKP-A) để xác thực KYC hiện có và cung cấp dịch vụ <br>(APP, cơ sở tiện lợi, tài chính, v.v.) với mức độ bảo mật thông tin cá nhân cao nhất"
+    },
+    "idpass": {
+        "title": "IDPASS",
+        "description": "Tất cả các loại tiền tệ trên toàn thế giới đều được áp dụng dịch vụ tính phí won đơn giản <br>và hệ thống thanh toán bằng mã QR",
+        "itemContent1": "Giới thiệu hệ thống thanh toán đơn giản phù hợp với nhu cầu của người dùng",
+        "itemContent2": "Các khoản thanh toán được liên kết với PayPal, UnionPay và các công ty thẻ tín dụng ở nước ngoài",
+        "itemContent3": "Sau khi quét mã QR thanh toán, cho biết tỷ giá quy đổi theo loại tiền của quốc gia đã đặt"
+    },
+    "iddata": {
+        "title": "IDData",
+        "description": "Dữ liệu lớn về thói quen du lịch được thu thập và dịch vụ <br>dữ liệu lớn về du lịch của IDBlock được cung cấp thông qua các thuật toán",
+        "itemContent1": "Tìm hiểu dữ liệu chuyến tham quan thường xuyên của người dùng IDBlock để cung cấp các khóa học tham quan tùy chỉnh",
+        "itemContent2": "Sự dễ dàng phát triển liên tục các sản phẩm du lịch của các bên quan tâm trong ngành du lịch",
+        "itemContent3": "Hỗ trợ xây dựng các chính sách du lịch khác biệt thông qua phân tích nhanh chóng và thuận tiện về hiện trạng du lịch Dữ liệu lớn."
+    },
+    "footer": {
+        "tel": "SĐT +82 2-6975-9999",
+        "fax": "FAX +82 2-6008-5040",
+        "contact": "Liên hệ info@crosshub.kr",
+        "address1": "Văn Phòng 404-D38Ho, 1161, Gyebaek-ro, Seo-gu, Daejeon",
+        "address2": "Trung tâm nghiên cứu tài chính 17F, 83, Uisadang-daero, Yeongdeungpo-gu, Seoul",
+        "address3": "Trung tâm nghiên cứu toàn cầu 3F, 31 Magokjungang 8-ro 3-gil, Gangseo-gu, Seoul.",
+        "tag": "© 2024 CrossHub. All rights reserved."
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "header": {
+        "home": "Home",
+        "company": "Company",
+        "service": "Service",
+        "technology": "Technology"
+    },
+    "home": {
+        "slogan": "Realizing the value <br>of everyday life and technology"
+    },
+    "company": {
+        "description": "As a hub that connects the crossroads of tradition and the future, people and objects, and past experiences and future possibilities with innovative technology, we provide customers with new experiences and services. <br><br>Based on blockchain and AI technologies, CrossHub leads the digital transformation (DX) in fintech, connecting all aspects of our daily lives to realize new experiences and the value of technology."
+    },
+    "service": {
+        "title": "SERVICE",
+        "subTitle": "CROSSHUB provides a variety of differentiated <br>services based on blockchain and AI technologies.",
+        "IDBlockTitle": "IDBlock",
+        "IDBlockContent": "Blockchain-based DID <br>identity verification service",
+        "IDPassTitle": "IDPass",
+        "IDPassContent": "Global easy payment and international <br>currency notation service",
+        "IDDataTitle": "IDData",
+        "IDDataContent": "Travel big data-based AI analysis <br>and fusion analysis service"
+    },
+    "technology": {
+        "IDBlockTitle": "IDBlock",
+        "IDBlockContent": "IDBlock is optimized for blockchain-based identity verification services, <br>enabling everyone worldwide to securely and easily authenticate their identity, even within Korea.",
+        "IDBlockItemContent1": "Provides simple and secure identity verification services using passports, driver's licenses, etc.",
+        "IDBlockItemContent2": "Decentralized system where individuals manage their own identity verification data.",
+        "IDBlockItemContent3": "Applicable in various situations where identity verification is required.",
+        "IDBlockItemContent4": "Enables integration and use with domestic app services through simple identity verification.",
+        "IDBlockItemContent5": "Ensures blockchain privacy and scalability using Zero-Knowledge Proof (ZKP) technology.",
+        "subIDBlockTitle": "Establishes a higher level <br>of security with <br>Zero-Knowledge Proof",
+        "subIDBlockContent": "A technology that verifies the validity of blockchain data and protects privacy by proving to the verifier that the verifier knows the secret information without directly exposing the confidential information to the verifier.",
+        "processTitle": "Process",
+        "processContent": "Apply blockchain (ZKP-A) technology to existing KYC authentication and provide services <br>(APP, convenience facilities, finance, etc.) with the highest level of personal information security"
+    },
+    "idpass": {
+        "title": "IDPASS",
+        "description": "All currencies around the world are applied with a simple <br>won charging service and QR code payment system",
+        "itemContent1": "Introduction of a simple payment system tailored to user needs",
+        "itemContent2": "Payments are linked to PayPal, UnionPay, and overseas credit card companies",
+        "itemContent3": "After scanning the payment QR code, indicate the exchange rate in the currency of the set country"
+    },
+    "iddata": {
+        "title": "IDData",
+        "description": "Tourism Routine Big Data is collected and IDBlock's own tourism big data <br>service is provided through algorithms",
+        "itemContent1": "Learn IDBlock user's tour routine data to provide customized tour courses",
+        "itemContent2": "The ease of continuous development of tourism products by interested parties in the tourism industry",
+        "itemContent3": "Support the establishment of differentiated tourism policies through rapid and convenient analysis of Big Data tourism status."
+    },
+    "footer": {
+        "tel": "TEL +82 2-6975-9999",
+        "fax": "FAX +82 2-6008-5040",
+        "contact": "Contact info@crosshub.kr",
+        "address1": "Headquarters 404-D38Ho, 1161, Gyebaek-ro, Seo-gu, Daejeon",
+        "address2": "Fintech R&D Center 17F, 83, Uisadang-daero, Yeongdeungpo-gu, Seoul",
+        "address3": "Global Research Center 3F, 31 Magokjungang 8-ro 3-gil, Gangseo-gu, Seoul.",
+        "tag": "© 2024 CrossHub. All rights reserved."
+    }
+}

@@ -79,3 +79,51 @@ const navLinkEls = document.querySelectorAll('.nav__link');
 
             })
         }
+
+
+        // Scroll to id
+        let _smooth = $('a[href^="#"]');
+        _smooth.click(function () {
+            let speed = 400;
+            let href = $(this).attr("href");
+            let target = $(href === '#top' || href === '#' || href === '' ? 'html' : href);
+            let header = $('header').outerHeight();
+            let position = target.offset().top - header;
+            if (!$('body html').is(':animated')) {
+                $('body,html').stop().animate({ scrollTop: position }, speed, 'swing');
+            }
+            return false;
+        });
+
+$(document).ready(function () {
+    function getNestedProperty(obj, path) {
+        return path.split('.').reduce((o, key) => (o ? o[key] : null), obj);
+    }
+
+    // Hàm tải ngôn ngữ từ file JSON
+    function loadLanguage(language) {
+        $.getJSON(`assets/json/${language}.json`, function (data) {
+            $('[data-i18n]').each(function () {
+                const path = $(this).data('i18n'); // Lấy đường dẫn từ thuộc tính `data-i18n`
+                const translation = getNestedProperty(data, path); // Lấy giá trị từ JSON
+                if (translation) {
+                    $(this).html(translation);
+                }
+            });
+        });
+    }
+
+    // Lấy ngôn ngữ hiện tại từ localStorage (hoặc mặc định là 'en')
+    const currentLanguage = localStorage.getItem('language') || 'en';
+
+    // Đặt giá trị cho dropdown và tải ngôn ngữ
+    $('#language-select').val(currentLanguage);
+    loadLanguage(currentLanguage);
+
+    // Sự kiện thay đổi ngôn ngữ
+    $('#language-select').change(function () {
+        const selectedLanguage = $(this).val();
+        localStorage.setItem('language', selectedLanguage); // Lưu ngôn ngữ vào localStorage
+        loadLanguage(selectedLanguage); // Tải ngôn ngữ mới
+    });
+});

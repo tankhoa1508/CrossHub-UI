@@ -24,19 +24,20 @@
           <nav id="nav" class="">
 
             <ul>
-              <li><a class="nav__link active" onclick="closeNav()" href="#home">Home</a></li>
-              <li><a class="nav__link" onclick="closeNav()" href="#company">Company</a></li>
-              <li><a class="nav__link" onclick="closeNav()" href="#service">Service</a></li>
-              <li><a class="nav__link" onclick="closeNav()" href="#technology">Technology</a></li>
+              <li><a class="nav__link active" onclick="closeNav()" href="#home" data-i18n="header.home">Home</a></li>
+              <li><a class="nav__link" onclick="closeNav()" href="#company" data-i18n="header.company">Company</a></li>
+              <li><a class="nav__link" onclick="closeNav()" href="#service"
+                data-i18n="header.service">Service</a></li>
+              <li><a class="nav__link" onclick="closeNav()" href="#technology" data-i18n="header.technology">Technology</a></li>
             </ul>
           </nav>
 
           <div class="language">
             <img src="./assets/images/global.svg" id="language-icon" alt="">
             <select name="language-select" id="language-select">
-                <option id="english" value="english">English</option>
-                <option id="korean" value="korean">Korean</option>
-                <option id="vietnamese" value="vietnamese">Vietnamese</option>
+                <option id="english" value="en">English</option>
+                <option id="korean" value="kr">Korean</option>
+                <option id="vietnamese" value="vi">Vietnamese</option>
               </select>
           </div>
         </div>
@@ -45,7 +46,7 @@
     <section id="home" class="section">
         <div class="intro-text">
           <img src="./assets/images/word.png" alt="#">
-          <p>Realizing the value <br>of everyday life and technology</p>
+          <p data-i18n="home.slogan">Realizing the value <br>of everyday life and technology</p>
         </div>
     </section>
 
@@ -53,39 +54,39 @@
         <div class="company-content">
           <div class="company-text" data-aos="fade-right">
             <img src="./assets/images/word.png" alt="#">
-            <p>As a hub that connects the crossroads of tradition and the future, people and objects, and past experiences and future possibilities with innovative technology, we provide customers with new experiences and services. <br><br>
+            <p data-i18n="company.description">As a hub that connects the crossroads of tradition and the future, people and objects, and past experiences and future possibilities with innovative technology, we provide customers with new experiences and services. <br><br>
                 Based on blockchain and AI technologies, CrossHub leads the digital transformation (DX) in fintech, connecting all aspects of our daily lives to realize new experiences and the value of technology.</p>
           </div>
           <div class="company-image" data-aos="fade-left">
-            <img src="./assets/images/company_cube.png" alt="hình ảnh" class="animated-image">
+            <img src="./assets/images/company_cube.png" alt="company image" class="animated-image">
           </div>
         </div>
     </section>
 
     <section id="service" class="section">
         <div class="service-content">
-          <h2>SERVICE</h2>
-          <p>CROSSHUB provides a variety of differentiated <br>services based on blockchain and AI technologies.</p>
+          <h2 data-i18n="service.title">SERVICE</h2>
+          <p data-i18n="service.subTitle">CROSSHUB provides a variety of differentiated <br>services based on blockchain and AI technologies.</p>
           <div class="service-images">
             <div class="service-item" data-aos="flip-up">
               <img src="./assets/images/service1.jpg" alt="service 1" class="animated-image">
               <div class="service-text">
-                <h3>IDBlock</h3>
-                <p>Blockchain-based DID <br> identity verification service</p>
+                <h3 data-i18n="service.IDBlockTitle">IDBlock</h3>
+                <p data-i18n="service.IDBlockContent">Blockchain-based DID <br> identity verification service</p>
               </div>
             </div>
             <div class="service-item" data-aos="flip-up">
               <img src="./assets/images/service2.jpg" alt="service 2" class="animated-image">
               <div class="service-text">
-                <h3>IDPass</h3>
-                <p>Global easy payment and international <br>currency notation service</p>
+                <h3 data-i18n="service.IDPassTitle">IDPass</h3>
+                <p data-i18n="service.IDPassContent">Global easy payment and international <br>currency notation service</p>
               </div>
             </div>
             <div class="service-item" data-aos="flip-up">
               <img src="./assets/images/service3.jpg" alt="service 3" class="animated-image">
               <div class="service-text">
-                <h3>IDData</h3>
-                <p>Travel big data-based AI analysis <br> and fusion analysis service</p>
+                <h3 data-i18n="service.IDDataTitle">IDData</h3>
+                <p data-i18n="service.IDDataContent">Travel big data-based AI analysis <br> and fusion analysis service</p>
               </div>
             </div>
           </div>
@@ -96,34 +97,34 @@
         <div class="bg-bottom">
             <div class="technology-content">
               <div class="tech-header">
-                <h3>IDBlock</h3>
-                <p>IDBlock is optimized for blockchain-based identity verification services, <br>enabling everyone worldwide to securely and easily authenticate their identity, even within Korea.</p>
+                <h3 data-i18n="technology.IDBlockTitle">IDBlock</h3>
+                <p data-i18n="technology.IDBlockContent">IDBlock is optimized for blockchain-based identity verification services, <br>enabling everyone worldwide to securely and easily authenticate their identity, even within Korea.</p>
               </div>
         
               <div class="tech-item">
                 <div class="tech-image" data-aos="zoom-in-up">
-                  <img src="./assets/images/tech1.png" alt="Hình ảnh công nghệ 1">
+                  <img src="./assets/images/tech1.png" alt="technology image">
                 </div>
                 <div class="tech-details" data-aos="zoom-in-up">
                   <div class="tech-text">
                     <h4>01</h4>
-                    <span>Provides simple and secure identity verification services using passports, driver's licenses, etc.</span>
+                    <span data-i18n="technology.IDBlockItemContent1">Provides simple and secure identity verification services using passports, driver's licenses, etc.</span>
                   </div>
                   <div class="tech-text">
                     <h4>02</h4>
-                    <span>Decentralized system where individuals manage their own identity verification data.</span>
+                    <span data-i18n="technology.IDBlockItemContent2">Decentralized system where individuals manage their own identity verification data.</span>
                   </div>
                   <div class="tech-text">
                     <h4>03</h4>
-                    <span>Applicable in various situations where identity verification is required.</span>
+                    <span data-i18n="technology.IDBlockItemContent3">Applicable in various situations where identity verification is required.</span>
                   </div>
                   <div class="tech-text">
                     <h4>04</h4>
-                    <span>Enables integration and use with domestic app services through simple identity verification.</span>
+                    <span data-i18n="technology.IDBlockItemContent4">Enables integration and use with domestic app services through simple identity verification.</span>
                   </div>
                   <div class="tech-text">
                     <h4>05</h4>
-                    <span>Ensures blockchain privacy and scalability using Zero-Knowledge Proof (ZKP) technology.</span>
+                    <span data-i18n="technology.IDBlockItemContent5">Ensures blockchain privacy and scalability using Zero-Knowledge Proof (ZKP) technology.</span>
                   </div>
                 </div>
               </div>
@@ -131,26 +132,26 @@
               <div class="tech-item2">
                 <div class="tech-details" data-aos="zoom-in-right">
                   <div class="tech-text">
-                    <h5>Establishes a higher level <br>of security with <br>Zero-Knowledge Proof</h5>
-                    <p>A technology that verifies the validity of blockchain data and protects privacy by proving to the verifier that the verifier knows the secret information without directly exposing the confidential information to the verifier.</p>
+                    <h5 data-i18n="technology.subIDBlockTitle">Establishes a higher level <br>of security with <br>Zero-Knowledge Proof</h5>
+                    <p data-i18n="technology.subIDBlockContent">A technology that verifies the validity of blockchain data and protects privacy by proving to the verifier that the verifier knows the secret information without directly exposing the confidential information to the verifier.</p>
                   </div>
                 </div>
                 <div class="tech-image" data-aos="zoom-in-right">
-                  <img src="./assets/images/tech2-removebg-preview.png" alt="Hình ảnh công nghệ 2">
+                  <img src="./assets/images/tech2-removebg-preview.png" alt="tech image 2">
                 </div>
               </div>
     
               <div class="process-container">
                 <div class="process-content">
                   <div class="process-header">
-                    <h3>Process</h3>
+                    <h3 data-i18n="technology.processTitle">Process</h3>
                   </div>
                   <div class="process-image mo-process-image" data-aos="zoom-out-right" data-aos-duration="2000">
-                    <img src="./assets/images/process.png" id="process-img" alt="hình ảnh">
+                    <img src="./assets/images/process.png" id="process-img" alt="process description">
                   </div>
                   <div class="process-item">
                     <div class="process-text">
-                      <h5>Apply blockchain (ZKP-A) technology to existing KYC authentication and provide services <br>
+                      <h5 data-i18n="technology.processContent">Apply blockchain (ZKP-A) technology to existing KYC authentication and provide services <br>
                         (APP, convenience facilities, finance, etc.) with the highest level of personal information security</h5>
                     </div>
                   </div>
@@ -163,25 +164,25 @@
     <section id="idpass" class="section">
         <div class="process-content">
           <div class="process-header">
-            <h3>IDPASS</h3>
+            <h3 data-i18n="idpass.title">IDPASS</h3>
           </div>
-          <h5>All currencies around the world are applied with a simple <br>
+          <h5 data-i18n="idpass.description">All currencies around the world are applied with a simple <br>
             won charging service and QR code payment system</h5>
           <div class="tech-item2">
             <div class="image-section" data-aos="zoom-in-up">
-              <img src="./assets/images/IDPASS.png" class="tech-image__idpass" alt="Hình ảnh thẻ ID">
+              <img src="./assets/images/IDPASS.png" class="tech-image__idpass" alt="IDPass image">
             </div>
             <div class="tech-details" data-aos="zoom-in-up">
               <div class="idpass-text">
-                <p>Introduction of a simple payment system tailored to user needs</p>
-                <p>Payments are linked to PayPal, UnionPay, and overseas credit card companies</p>
-                <p>After scanning the payment QR code, indicate the exchange rate in the currency of the set country</p>
+                <p data-i18n="idpass.itemContent1">Introduction of a simple payment system tailored to user needs</p>
+                <p data-i18n="idpass.itemContent2">Payments are linked to PayPal, UnionPay, and overseas credit card companies</p>
+                <p data-i18n="idpass.itemContent3">After scanning the payment QR code, indicate the exchange rate in the currency of the set country</p>
               </div>
             </div>
           </div>
           <div class="tech-item" id="tech-item">
             <div class="tech-image" >
-              <img src="./assets/images/IDPASS2.png" alt="Hình ảnh" data-aos="zoom-in-up">
+              <img src="./assets/images/IDPASS2.png" alt="IDPass process" data-aos="zoom-in-up">
             </div>
           </div>
         </div>
@@ -189,8 +190,8 @@
 
     <section id="iddata" class="iddata-section">
         <div class="iddata-header">
-          <h3>IDData</h3>
-          <h5>
+          <h3 data-i18n="iddata.title">IDData</h3>
+          <h5 data-i18n="iddata.description">
             Tourism Routine Big Data is collected and IDBlock's own tourism big data <br>
             service is provided through algorithms
           </h5>
@@ -200,15 +201,15 @@
           <div class="iddata-text">
             <div class="iddata-item">
               <h4>01</h4>
-              <span>Learn IDBlock user's tour routine data to provide customized tour courses</span>
+              <span data-i18n="iddata.itemContent1">Learn IDBlock user's tour routine data to provide customized tour courses</span>
             </div>
             <div class="iddata-item">
               <h4>02</h4>
-              <span>The ease of continuous development of tourism products by interested parties in the tourism industry</span>
+              <span data-i18n="iddata.itemContent2">The ease of continuous development of tourism products by interested parties in the tourism industry</span>
             </div>
             <div class="iddata-item">
               <h4>03</h4>
-              <span>Support the establishment of differentiated tourism policies through rapid and convenient analysis of Big Data tourism status.</span>
+              <span data-i18n="iddata.itemContent3">Support the establishment of differentiated tourism policies through rapid and convenient analysis of Big Data tourism status.</span>
             </div>
           </div>
           <div class="iddata-image" data-aos="zoom-in-up">
@@ -234,18 +235,18 @@
             <div class="footer-content">
               <div class="footer-contact">
                 <div class="footer-info">
-                  <p>TEL +82 2-6975-9999</p>
-                  <p>FAX +82 2-6008-5040</p>
-                  <p>Contact info@crosshub.kr</p>
+                  <p data-i18n="footer.tel">TEL +82 2-6975-9999</p>
+                  <p data-i18n="footer.fax">FAX +82 2-6008-5040</p>
+                  <p data-i18n="footer.contact">Contact info@crosshub.kr</p>
                 </div>
                 <img src="./assets/images/mark.png" alt="mark">
               </div>
               <div class="footer-address">
-                <p>Headquarters 404-D38Ho, 1161, Gyebaek-ro, Seo-gu, Daejeon</p>
-                <p>Fintech R&D Center 17F, 83, Uisadang-daero, Yeongdeungpo-gu, Seoul</p>
-                <p>Global Research Center 3F, 31 Magokjungang 8-ro 3-gil, Gangseo-gu, Seoul.</p>
+                <p data-i18n="footer.address1">Headquarters 404-D38Ho, 1161, Gyebaek-ro, Seo-gu, Daejeon</p>
+                <p data-i18n="footer.address2">Fintech R&D Center 17F, 83, Uisadang-daero, Yeongdeungpo-gu, Seoul</p>
+                <p data-i18n="footer.address3">Global Research Center 3F, 31 Magokjungang 8-ro 3-gil, Gangseo-gu, Seoul.</p>
                 <p style="color: #333 ;">.</p>
-                <p>© 2024 CrossHub. All rights reserved.</p>
+                <p data-i18n="footer.tag">© 2024 CrossHub. All rights reserved.</p>
               </div>
             </div>
           </div>
@@ -256,6 +257,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
