@@ -673,7 +673,7 @@ header .header-container .language select {
 }
 @media screen and (max-width: 360px) {
   #technology .bg-bottom .technology-content .process-container .process-content .process-item .process-text h5 {
-    padding: 20px 10px;
+    padding: 15px 10px;
   }
 }
 
@@ -733,7 +733,7 @@ header .header-container .language select {
 }
 @media screen and (max-width: 360px) {
   #idpass .process-content h5 {
-    margin: 0 30px;
+    margin: 0 50px;
     margin-bottom: 8px;
   }
 }
